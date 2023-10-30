@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <style>
+        /* Form Container */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Label Styles */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Input Styles */
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Textarea Styles */
+        textarea {
+            height: 100px;
+        }
+
+        /* Select Styles */
+        select {
+            height: 40px;
+        }
+
+        /* Submit Button Styles */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Submit Button Hover Effect */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D7R000005RF0z" method="POST">
+        <input type="hidden" name="orgid" value="00D7R000005RF0z">
+        <input type="hidden" name="retURL" value="http://jacobkydyrov.github.io/Thank-you-page/">
+
+        <label for="name">Contact Name</label>
+        <input id="name" maxlength="80" name="name" size="20" type="text" />
+
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" size="20" type="text" />
+
+        <label for="phone">Phone</label>
+        <input id="phone" maxlength="40" name="phone" size="20" type="text" />
+
+        <label for="subject">Subject</label>
+        <input id="subject" maxlength="80" name="subject" size="20" type="text" />
+
+        <label for="description">Description</label>
+        <textarea name="description"></textarea>
+
+        <label for="state">State</label>
+        <select id="00N7R00000Fqfjl" name="00N7R00000Fqfjl" title="State">
+            <option value="">--None--</option>
+            <option value="DC Washington">DC Washington</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Maryland">Maryland</option>
+        </select>
+
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
